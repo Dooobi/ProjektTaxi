@@ -1,31 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Forms;
 
-namespace Test
+namespace TestWindowsForms
 {
-    /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class Form1 : Form
     {
-        public MainWindow()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
             gmap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
@@ -36,12 +28,12 @@ namespace Test
             gmap.ShowCenter = false;
             gmap.Zoom = 13;
 
-             
-        }
+            // Overlay und Markers
+            GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
+            GMap.NET.WindowsForms.GMapMarker marker = new GMap.NET.WindowsForms.Markers.GMarkerGoogle(new GMap.NET.PointLatLng(1, 1), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue_pushpin);
+            markers.Markers.Add(marker);
+            gmap.Overlays.Add(markers);
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            gmap.Position = new GMap.NET.PointLatLng(48.8589507, 2.2775175);
         }
     }
 }
