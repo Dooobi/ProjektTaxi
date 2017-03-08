@@ -96,6 +96,7 @@
             this.gmap.Size = new System.Drawing.Size(589, 578);
             this.gmap.TabIndex = 1;
             this.gmap.Zoom = 13D;
+            this.gmap.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gmap_OnMarkerClick);
             // 
             // label_straße
             // 
