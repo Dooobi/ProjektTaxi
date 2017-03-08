@@ -30,9 +30,13 @@ namespace TestWindowsForms
 
             // Overlay und Markers
             GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
-            GMap.NET.WindowsForms.GMapMarker marker = new GMap.NET.WindowsForms.Markers.GMarkerGoogle(new GMap.NET.PointLatLng(1, 1), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue_pushpin);
-            markers.Markers.Add(marker);
-            gmap.Overlays.Add(markers);
+     
+            GMap.NET.WindowsForms.GMapMarker marker = new GMap.NET.WindowsForms.Markers.GMarkerGoogle(new GMap.NET.PointLatLng(1, 1), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.green);
+
+        
+
+          
+
 
         }
     }
