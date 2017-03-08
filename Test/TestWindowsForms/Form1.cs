@@ -43,7 +43,13 @@ namespace TestWindowsForms
         private void btn_search_Click(object sender, EventArgs e)
         {
             String straße = textBox_straße.Text;
-            String 
+            String plz = textBox_plz.Text;
+
+            StringBuilder querryadress = new StringBuilder();
+            querryadress.Append(straße + ", ");
+            querryadress.Append(plz);
+
+            gmap.SetPositionByKeywords(querryadress.ToString());
         }
     }
 }
