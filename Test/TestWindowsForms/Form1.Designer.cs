@@ -39,6 +39,7 @@
             this.textBox_personen = new System.Windows.Forms.TextBox();
             this.textBox_plz = new System.Windows.Forms.TextBox();
             this.btn_search = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -53,6 +54,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.btn_search);
             this.splitContainer1.Panel1.Controls.Add(this.textBox_plz);
             this.splitContainer1.Panel1.Controls.Add(this.textBox_personen);
@@ -98,7 +100,7 @@
             // label_straße
             // 
             this.label_straße.AutoSize = true;
-            this.label_straße.Location = new System.Drawing.Point(40, 68);
+            this.label_straße.Location = new System.Drawing.Point(43, 167);
             this.label_straße.Name = "label_straße";
             this.label_straße.Size = new System.Drawing.Size(38, 13);
             this.label_straße.TabIndex = 0;
@@ -107,7 +109,7 @@
             // label_plz
             // 
             this.label_plz.AutoSize = true;
-            this.label_plz.Location = new System.Drawing.Point(43, 96);
+            this.label_plz.Location = new System.Drawing.Point(43, 195);
             this.label_plz.Name = "label_plz";
             this.label_plz.Size = new System.Drawing.Size(27, 13);
             this.label_plz.TabIndex = 1;
@@ -116,7 +118,7 @@
             // label_personen
             // 
             this.label_personen.AutoSize = true;
-            this.label_personen.Location = new System.Drawing.Point(43, 128);
+            this.label_personen.Location = new System.Drawing.Point(43, 227);
             this.label_personen.Name = "label_personen";
             this.label_personen.Size = new System.Drawing.Size(83, 13);
             this.label_personen.TabIndex = 2;
@@ -125,7 +127,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 154);
+            this.label1.Location = new System.Drawing.Point(43, 253);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
             this.label1.TabIndex = 3;
@@ -133,41 +135,51 @@
             // 
             // textBox_straße
             // 
-            this.textBox_straße.Location = new System.Drawing.Point(174, 65);
+            this.textBox_straße.Location = new System.Drawing.Point(174, 164);
             this.textBox_straße.Name = "textBox_straße";
             this.textBox_straße.Size = new System.Drawing.Size(100, 20);
             this.textBox_straße.TabIndex = 4;
             // 
             // textBox_volumen
             // 
-            this.textBox_volumen.Location = new System.Drawing.Point(174, 151);
+            this.textBox_volumen.Location = new System.Drawing.Point(174, 250);
             this.textBox_volumen.Name = "textBox_volumen";
             this.textBox_volumen.Size = new System.Drawing.Size(100, 20);
             this.textBox_volumen.TabIndex = 5;
             // 
             // textBox_personen
             // 
-            this.textBox_personen.Location = new System.Drawing.Point(174, 125);
+            this.textBox_personen.Location = new System.Drawing.Point(174, 224);
             this.textBox_personen.Name = "textBox_personen";
             this.textBox_personen.Size = new System.Drawing.Size(100, 20);
             this.textBox_personen.TabIndex = 6;
             // 
             // textBox_plz
             // 
-            this.textBox_plz.Location = new System.Drawing.Point(174, 93);
+            this.textBox_plz.Location = new System.Drawing.Point(174, 192);
             this.textBox_plz.Name = "textBox_plz";
             this.textBox_plz.Size = new System.Drawing.Size(100, 20);
             this.textBox_plz.TabIndex = 7;
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(106, 204);
+            this.btn_search.Location = new System.Drawing.Point(94, 353);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(108, 32);
             this.btn_search.TabIndex = 8;
             this.btn_search.Text = "Suchen";
             this.btn_search.UseVisualStyleBackColor = true;
             this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(64, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(185, 39);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Rezlets Drive";
             // 
             // Form1
             // 
@@ -200,6 +212,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_personen;
         private System.Windows.Forms.Label label_plz;
+        private System.Windows.Forms.Label label2;
 
     }
 }
