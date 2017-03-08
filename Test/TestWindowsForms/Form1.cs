@@ -35,5 +35,11 @@ namespace TestWindowsForms
             gmap.Overlays.Add(markers);
 
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            String straße = textBox_straße.Text;
+            String 
+        }
     }
 }
