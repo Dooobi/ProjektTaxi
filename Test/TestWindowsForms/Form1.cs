@@ -51,10 +51,13 @@ namespace TestWindowsForms
 
         }
 
+       
+
         private void gmap_OnMarkerClick(GMap.NET.WindowsForms.GMapMarker item, MouseEventArgs e)
         {
-            Berechnung form = new Berechnung();
-            form.Visible = true;
+
+            Berechnung berechnung = new Berechnung();
+            berechnung.Visible = true;
         }
     }
 }
