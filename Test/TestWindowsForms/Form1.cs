@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using TaxiDLL;
+
 
 namespace TestWindowsForms
 {
@@ -18,7 +20,7 @@ namespace TestWindowsForms
             InitializeComponent();
         }
         GMap.NET.WindowsForms.GMapOverlay markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
-        GMap.NET.WindowsForms.GMapMarker marker = new GMap.NET.WindowsForms.Markers.GMarkerGoogle(new GMap.NET.PointLatLng(49.773111, 9.940927), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue_pushpin);
+   //     GMap.NET.WindowsForms.GMapMarker marker = new GMap.NET.WindowsForms.Markers.GMarkerGoogle(new GMap.NET.PointLatLng(49.773111, 9.940927), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue_pushpin);
             
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,6 +38,17 @@ namespace TestWindowsForms
 
         private void btn_search_Click(object sender, EventArgs e)
         {
+            Datenzugriff dz = new Datenzugriff();
+            List<Taxi> taxiListe = dz.getTaxis();
+
+            foreach(Taxi taxi in taxiListe){
+
+            GMap.NET.WindowsForms.GMapMarker marker = new GMap.NET.WindowsForms.Markers.GMarkerGoogle(new GMap.NET.PointLatLng(taxi.Longitude, taxi.Latitude), GMap.NET.WindowsForms.Markers.GMarkerGoogleType.blue);
+            markers.Markers.Add(marker);
+
+            }
+
+
             String straße = textBox_straße.Text;
             String plz = textBox_plz.Text;
 
@@ -45,7 +58,7 @@ namespace TestWindowsForms
 
             gmap.SetPositionByKeywords(querryadress.ToString());
 
-            markers.Markers.Add(marker);
+            
             gmap.Overlays.Add(markers);
             
 
@@ -56,8 +69,8 @@ namespace TestWindowsForms
         private void gmap_OnMarkerClick(GMap.NET.WindowsForms.GMapMarker item, MouseEventArgs e)
         {
 
-            Berechnung berechnung = new Berechnung();
-            berechnung.Visible = true;
+         //   Berechnung berechnung = new Berechnung();
+         //   berechnung.Visible = true;
         }
     }
 }

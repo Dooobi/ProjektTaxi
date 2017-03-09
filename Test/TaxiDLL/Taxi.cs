@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiDLL
 {
-    class Taxi
+    public class Taxi
     {
 
         public int TaxiID { get; set; }

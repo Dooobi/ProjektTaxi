@@ -89,6 +89,12 @@
     <Content Include="GMap\GMap.NET.Core.dll" />
     <Content Include="GMap\GMap.NET.WindowsForms.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaxiDLL\TaxiDLL.csproj">
+      <Project>{87f33227-468d-4f6b-8242-e91cdbcfe1f7}</Project>
+      <Name>TaxiDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
