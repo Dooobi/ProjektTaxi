@@ -8,3 +8,4 @@ Informationen zur Google Maps API:<br>
 • http://www.independent-software.com/gmap-net-tutorial-maps-markers-and-polygons/ <br>
 • http://www.independent-software.com/gmap-net-tutorial-routes/ <br>
 • https://maps.googleapis.com/maps/api/directions/json?origin=Boston,MA&destination=Concord,MA&waypoints=Charlestown,MA|Lexington,MA
+• https://developers.google.com/maps/documentation/directions/intro#Waypoints
