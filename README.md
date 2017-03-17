@@ -12,3 +12,4 @@ Informationen zur Google Maps API:<br>
 • https://maps.googleapis.com/maps/api/directions/json?origin=Boston,MA&destination=Concord,MA&waypoints=Charlestown,MA|Lexington,MA <br>
 • https://developers.google.com/maps/documentation/directions/intro#Waypoints <br>
 • http://stackoverflow.com/questions/16274508/how-to-call-google-geocoding-service-from-c-sharp-code <br>
+• https://developers.google.com/maps/documentation/utilities/polylinealgorithm <br>
