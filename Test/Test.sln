@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{EB91D72C-E0B5-42D7-90F2-8050C84EF204}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWindowsForms", "TestWindowsForms\TestWindowsForms.csproj", "{0F261FA1-BB91-41E2-801E-2DC48AE101BA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDLL", "TaxiDLL\TaxiDLL.csproj", "{87F33227-468D-4F6B-8242-E91CDBCFE1F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EB91D72C-E0B5-42D7-90F2-8050C84EF204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB91D72C-E0B5-42D7-90F2-8050C84EF204}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB91D72C-E0B5-42D7-90F2-8050C84EF204}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB91D72C-E0B5-42D7-90F2-8050C84EF204}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0F261FA1-BB91-41E2-801E-2DC48AE101BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F261FA1-BB91-41E2-801E-2DC48AE101BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F261FA1-BB91-41E2-801E-2DC48AE101BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F261FA1-BB91-41E2-801E-2DC48AE101BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87F33227-468D-4F6B-8242-E91CDBCFE1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87F33227-468D-4F6B-8242-E91CDBCFE1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87F33227-468D-4F6B-8242-E91CDBCFE1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87F33227-468D-4F6B-8242-E91CDBCFE1F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
